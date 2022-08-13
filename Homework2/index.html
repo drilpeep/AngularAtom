@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.container {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.plan {
+    flex: 1 1 100%;
+    text-align: center;
+    background: #f6fdfe;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eaf2fa;
+}
+
+.undertitle {
+    font-size: 0.75rem;
+}
+
+.main {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #09502f;
+}
+
+.price-section {
+    background: white;
+    margin: 0.5rem;
+    padding: 0.5rem 0.5rem 0.75rem;
+    border: 1px solid #eaf2fa;
+    border-radius: 8px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.button-activate {
+    margin: 0.5rem auto;
+    border: 0;
+    width: 150px;
+    background: grey;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    text-transform: capitalize;
+    border-radius: 4px;
+}
+
+.period {
+    font-size: 0.5rem;
+    line-height: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.list {
+    font-size: 0.5rem;
+    text-align: left;
+    margin: 1rem 1rem 0;
+}
+
+.free {
+    color: green;
+}
+
+.pro {
+    color: blue;
+}
+
+.free-btn {
+    background-color: rgb(87, 142, 6);
+}
+
+.pro-btn {
+    background-color: rgb(0, 81, 255);
+}
+
+.premium {
+    color: orange;
+}
+
+.prm-but {
+    background-color: orange;
+}
+
+.list-title {
+    text-align: left;
+    font-size: 0.5rem;
+    line-height: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.list {
+    font-size: 0.5rem;
+    text-align: left;
+    margin: 1rem 1rem 0;
+}
+
+.compare {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.compare_btn {
+    background: #eaf2fa;
+    color: #09502f;
+}
+
+.title-plan {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+}
+
+p{
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h2 class="title"><b>Купите нашу подписку!</b></h2>
+    <p class="undertitle">Вы удивитесь, как много мы можем вам предложить!</p>
+    <div class="container">
+        <div class="plan  free">
+            <span class="title-plan">FREE</span>
+            <div class="price-section">
+                <div class="price">0$</div>
+                <button class="button-activate free-btn">Активировать</button>
+            </div>
+            <div class="list">
+                <div class="list-title"><b>FREE ПЛАН</b></div>
+                <p>✅ Вы всё делаете сами! 😍</p>
+                <p>✅ Вам будет что кушать! 🍔</p>
+                <p>🚫 У вас ничего не получится! 😧</p>
+                <p>🚫 Мы не скажем Вам "Спасибо" 😭</p>
+            </div>
+        </div>
+        <div class=" plan  pro">
+            <span class="title-plan">PRO</span>
+            <div class="price-section">
+                <div class="price">5$</div>
+                <button class="button-activate pro-btn">Активировать</button>
+                <p class="period">Есть пробный период!</p>
+            </div>
+            <div class="list">
+                <div class="list-title"><b>PRO ПЛАН</b></div>
+                <p>✅ Вы всё делаете сами! 😍</p>
+                <p>✅ У вас всё получится! 😎</p>
+                <p>✅ Мы скажем Вам "Спасибо" 🤝</p>
+                <p>🚫 Будет сложно! 🤔</p>
+            </div>
+        </div>
+        <div class=" plan premium">
+            <span class="title-plan">PREMIUM</span>
+            <div class="price-section">
+                <div class="price">10$</div>
+                <button class="button-activate prm-but">Активировать</button>
+                <p class="period">Есть пробный период!</p>
+            </div>
+            <div class="list">
+                <div class="list-title"><b>PREMIUM ПЛАН</b></div>
+                <p>✅ Мы всё сделаем за Вас! 😍</p>
+                <p>✅ У вас всё получится! 😎</p>
+                <p>✅ Мы скажем Вам "Спасибо" 😘</p>
+                <p>✅ Сложно не будет! 😃</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="compare"><button class="button-activate compare_btn">сравнить планы</button></div>
+</div>
+</body>
+</html>
